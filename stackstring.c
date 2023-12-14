@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * print_char - Prints the Ascii value.
- * @stack: Pointer to a pointer pointing to top node of the stack.
- * @line_number: Interger representing the line number of of the opcode.
+ * print_char - this function prints the Ascii value
+ * @stack: is a pointer pointer pointing to another pointer
+ * @line_number: is a pointer pointer pointing to another pointer
  */
 void print_char(stack_t **stack, unsigned int line_number)
 {
@@ -19,9 +19,9 @@ void print_char(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * print_str - Prints a string.
- * @stack: Pointer to a pointer pointing to top node of the stack.
- * @ln: Interger representing the line number of of the opcode.
+ * print_str - this function will print a string.
+ * @stack: is a pointer pointer pointing to another pointer
+ * @ln: is an integer
  */
 void print_str(stack_t **stack, __attribute__((unused))unsigned int ln)
 {
@@ -47,9 +47,9 @@ void print_str(stack_t **stack, __attribute__((unused))unsigned int ln)
 }
 
 /**
- * rotl - Rotates the first node of the stack to the bottom.
- * @stack: Pointer to a pointer pointing to top node of the stack.
- * @ln: Interger representing the line number of of the opcode.
+ * rotl - this function will rotate the first node to the bottom
+ * @stack: is a pointer pointer pointing to another pointer
+ * @ln: is an integer
  */
 void rotl(stack_t **stack, __attribute__((unused))unsigned int ln)
 {
@@ -69,11 +69,10 @@ void rotl(stack_t **stack, __attribute__((unused))unsigned int ln)
 	(*stack)->prev = NULL;
 }
 
-
 /**
- * rotr - Rotates the last node of the stack to the top.
- * @stack: Pointer to a pointer pointing to top node of the stack.
- * @ln: Interger representing the line number of of the opcode.
+ * rotr - this function will rotate the last node to the top
+ * @stack: is a pointer pointer pointing to another pointer
+ * @ln: is an integer
  */
 void rotr(stack_t **stack, __attribute__((unused))unsigned int ln)
 {
