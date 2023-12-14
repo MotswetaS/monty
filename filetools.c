@@ -1,8 +1,8 @@
 #include "monty.h"
 
 /**
- * open_file - opens a file
- * @file_name: the file namepath
+ * open_file - this function will open file
+ * @file_name: this is the file namepath
  * Return: void
  */
 
@@ -19,8 +19,8 @@ void open_file(char *file_name)
 
 
 /**
- * read_file - reads a file
- * @fd: pointer to file descriptor
+ * read_file - this function will read a file
+ * @fd: it is a pointer(address) to the descriptor
  * Return: void
  */
 
@@ -39,13 +39,12 @@ void read_file(FILE *fd)
 
 
 /**
- * parse_line - Separates each line into tokens to determine
- * which function to call
- * @buffer: line from the file
+ * parse_line - this function will separate each line into tokens
+ * and finds which functio to call
+ * @buffer: it is theline from the file
  * @line_number: line number
- * @format:  storage format. If 0 Nodes will be entered as a stack.
- * if 1 nodes will be entered as a queue.
- * Return: Returns 0 if the opcode is stack. 1 if queue.
+ * @format: this is the storage format
+ * Return: Returns 0 or 1
  */
 
 int parse_line(char *buffer, int line_number, int format)
@@ -71,12 +70,10 @@ int parse_line(char *buffer, int line_number, int format)
 }
 
 /**
- * find_func - find the appropriate function for the opcode
- * @opcode: opcode
+ * find_func - this function finds the appropriate function for opcode
+ * @opcode: it is the opcode
  * @value: argument of opcode
- * @format:  storage format. If 0 Nodes will be entered as a stack.
- * @ln: line number
- * if 1 nodes will be entered as a queue.
+ * @format:  storage format which is 0 or 1
  * Return: void
  */
 void find_func(char *opcode, char *value, int ln, int format)
@@ -120,13 +117,12 @@ void find_func(char *opcode, char *value, int ln, int format)
 
 
 /**
- * call_fun - Calls the required function.
- * @func: Pointer to the function that is about to be called.
- * @op: string representing the opcode.
- * @val: string representing a numeric value.
+ * call_fun - this function calls the required function
+ * @func: it is a pointer, address, Pointer to the function
+ * @op: it is a string that represents the opcode.
+ * @val: it is a string that represents a numeric value.
  * @ln: line numeber for the instruction.
- * @format: Format specifier. If 0 Nodes will be entered as a stack.
- * if 1 nodes will be entered as a queue.
+ * @format: Format specifier. 0 or 1
  */
 void call_fun(op_func func, char *op, char *val, int ln, int format)
 {

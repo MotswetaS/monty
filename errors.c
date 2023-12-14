@@ -1,16 +1,16 @@
 #include "monty.h"
 
 /**
- * err - Prints appropiate error messages determined by their error code.
- * @error_code: The error codes are the following:
- * (1) => The user does not give any file or more than one file to the program.
- * (2) => The file provided is not a file that can be opened or read.
- * (3) => The file provided contains an invalid instruction.
- * (4) => When the program is unable to malloc more memory.
- * (5) => When the parameter passed to the instruction "push" is not an int.
- * (6) => When the stack it empty for pint.
- * (7) => When the stack it empty for pop.
- * (8) => When stack is too short for operation.
+ * err - this function prints error messages according to error code.
+ * @error_code: Thse are the error codes
+ * (1) => no file or more than one file
+ * (2) => file cannot be opened or read
+ * (3) => file contains invalid instruction
+ * (4) => program is unable to malloc more memory
+ * (5) => parameter passed to the instruction is not an int
+ * (6) => stack empty for pint
+ * (7) => stack empty for pop
+ * (8) => stack is too short
  */
 void err(int error_code, ...)
 {
@@ -47,12 +47,12 @@ void err(int error_code, ...)
 }
 
 /**
- * more_err - handles errors.
- * @error_code: The error codes are the following:
- * (6) => When the stack it empty for pint.
- * (7) => When the stack it empty for pop.
- * (8) => When stack is too short for operation.
- * (9) => Division by zero.
+ * more_err - this function handles errors
+ * @error_code: these are the error codes
+ * (6) => For when stack it empty for pint
+ * (7) => stack it empty for pop.
+ * (8) => for stack that is too short for operation.
+ * (9) => Division by zero(0)
  */
 void more_err(int error_code, ...)
 {
@@ -88,10 +88,10 @@ void more_err(int error_code, ...)
 }
 
 /**
- * string_err - handles errors.
- * @error_code: The error codes are the following:
- * (10) ~> The number inside a node is outside ASCII bounds.
- * (11) ~> The stack is empty.
+ * string_err - this func handles errors(string)
+ * @error_code: These are the error codes
+ * (10) => for when number inside a node is outside ASCII bounds.
+ * (11) => for whenstack is empty.
  */
 void string_err(int error_code, ...)
 {
