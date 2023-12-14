@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * mul_nodes - Adds the top two elements of the stack.
- * @stack: Pointer to a pointer pointing to top node of the stack.
- * @line_number: Interger representing the line number of of the opcode.
+ * mul_nodes - this function will add the top two elements of the stac
+ * @stack: is a pointer pointer pointing to another pointer
+ * @line_number: is an integer
  */
 void mul_nodes(stack_t **stack, unsigned int line_number)
 {
@@ -19,11 +19,10 @@ void mul_nodes(stack_t **stack, unsigned int line_number)
 	(*stack)->prev = NULL;
 }
 
-
 /**
- * mod_nodes - Adds the top two elements of the stack.
- * @stack: Pointer to a pointer pointing to top node of the stack.
- * @line_number: Interger representing the line number of of the opcode.
+ * mod_nodes - this function will add the top two elements of the stack
+ * @stack: is a pointer pointer pointing to another pointer
+ * @line_number: it is an integer
  */
 void mod_nodes(stack_t **stack, unsigned int line_number)
 {
